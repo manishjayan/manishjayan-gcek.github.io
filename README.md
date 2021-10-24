@@ -1,2 +1,3 @@
 # manishjayan-gcek.github.io
-About : Bio-Resume Page using bootstrap
+
+About: New Start with basics
