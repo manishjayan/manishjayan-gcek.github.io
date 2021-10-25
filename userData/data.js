@@ -182,8 +182,39 @@ var data = {
     var fullName = data.firstName+" "+data.lastName;
     document.title = fullName;
     document.getElementById("fullName").innerHTML = fullName;
+
     document.getElementsByClassName("twitter")[0].href = data.twitter;
     document.getElementsByClassName("instagram")[0].href = data.instagram;
     document.getElementsByClassName("github")[0].href = data.github;
     document.getElementsByClassName("linkedin")[0].href = data.linkedin;
+
+    document.getElementById("school-1").innerHTML = data.education[0].school;
+    document.getElementById("period-1").innerHTML = data.education[0].startYear+" - "+data.education[0].endYear;
+    document.getElementById("fieldofstudy-1").innerHTML = data.education[0].fieldOfStudy;
+    document.getElementById("school-2").innerHTML = data.education[1].school;
+    document.getElementById("period-2").innerHTML = data.education[1].startYear+" - "+data.education[0].endYear;
+    document.getElementById("fieldofstudy-2").innerHTML = data.education[1].fieldOfStudy;
+    document.getElementById("school-3").innerHTML = data.education[2].school;
+    document.getElementById("period-3").innerHTML = data.education[2].startYear+" - "+data.education[0].endYear;
+    document.getElementById("fieldofstudy-3").innerHTML = data.education[2].fieldOfStudy;
+
+    document.getElementById("etitle-1").innerHTML = data.experience[0].title+" - "+data.experience[0].company;
+    document.getElementById("eperiod-1").innerHTML = data.experience[0].startDate+" - "+data.experience[0].endDate;
+    document.getElementById("location-1").innerHTML = data.experience[0].location;
+    document.getElementById("description-1").innerHTML = data.experience[0].description;
+    
+    document.getElementById("etitle-2").innerHTML = data.experience[1].title+" - "+data.experience[1].company;
+    document.getElementById("eperiod-2").innerHTML = data.experience[1].startDate+" - "+data.experience[1].endDate;
+    document.getElementById("location-2").innerHTML = data.experience[1].location;
+    document.getElementById("description-2").innerHTML = data.experience[1].description;
+
+    document.getElementById("etitle-3").innerHTML = data.experience[2].title+" - "+data.experience[2].company;
+    document.getElementById("eperiod-3").innerHTML = data.experience[2].startDate+" - "+data.experience[2].endDate;
+    document.getElementById("location-3").innerHTML = data.experience[2].location;
+    document.getElementById("description-3").innerHTML = data.experience[2].description;
+
+    document.getElementById("etitle-4").innerHTML = data.experience[3].title+" - "+data.experience[3].company;
+    document.getElementById("eperiod-4").innerHTML = data.experience[3].startDate+" - "+data.experience[3].endDate;
+    document.getElementById("location-4").innerHTML = data.experience[3].location;
+    document.getElementById("description-4").innerHTML = data.experience[3].description;
 })()
