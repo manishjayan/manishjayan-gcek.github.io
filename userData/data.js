@@ -217,4 +217,9 @@ var data = {
     document.getElementById("eperiod-4").innerHTML = data.experience[3].startDate+" - "+data.experience[3].endDate;
     document.getElementById("location-4").innerHTML = data.experience[3].location;
     document.getElementById("description-4").innerHTML = data.experience[3].description;
+
+    document.getElementById("technical-certificate-name-1").innerHTML = data.technicalCertificates[0].name;
+    document.getElementById("technical-certificate-issuingOrganization-1").innerHTML = data.technicalCertificates[0].issuingOrganization;
+    document.getElementById("technical-certificate-issuedDate-1").innerHTML = data.technicalCertificates[0].issuedDate;
+
 })()
