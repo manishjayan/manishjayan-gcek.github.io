@@ -73,7 +73,7 @@ var data = {
             "company": "Cognizant",
             "location": "Coimbatore, Tamil Nadu, India",
             "startDate": "12-2020",
-            "endDate": "",
+            "endDate": "present",
             "description": ""
         }
     ],
@@ -188,38 +188,52 @@ var data = {
     document.getElementsByClassName("github")[0].href = data.github;
     document.getElementsByClassName("linkedin")[0].href = data.linkedin;
 
-    document.getElementById("school-1").innerHTML = data.education[0].school;
-    document.getElementById("period-1").innerHTML = data.education[0].startYear+" - "+data.education[0].endYear;
-    document.getElementById("fieldofstudy-1").innerHTML = data.education[0].fieldOfStudy;
-    document.getElementById("school-2").innerHTML = data.education[1].school;
-    document.getElementById("period-2").innerHTML = data.education[1].startYear+" - "+data.education[0].endYear;
-    document.getElementById("fieldofstudy-2").innerHTML = data.education[1].fieldOfStudy;
-    document.getElementById("school-3").innerHTML = data.education[2].school;
-    document.getElementById("period-3").innerHTML = data.education[2].startYear+" - "+data.education[0].endYear;
-    document.getElementById("fieldofstudy-3").innerHTML = data.education[2].fieldOfStudy;
+    for(var i = 0; i < 3; i++){
+        document.getElementById("education-items").innerHTML +=
+         "<div class='resume-item'><h4 id = 'school-"+(i+1)+"'>" + data.education[i].school 
+         + "</h4><h5 id = 'period-"+(i+1)+"'>"+data.education[i].startYear+" - "+data.education[i].endYear
+         +"</h5><em><p id = 'fieldofstudy-"+(i+1)+"'>"+data.education[i].fieldOfStudy 
+         + "</p></em><p></p></div>";
+    }
 
-    document.getElementById("etitle-1").innerHTML = data.experience[0].title+" - "+data.experience[0].company;
-    document.getElementById("eperiod-1").innerHTML = data.experience[0].startDate+" - "+data.experience[0].endDate;
-    document.getElementById("location-1").innerHTML = data.experience[0].location;
-    document.getElementById("description-1").innerHTML = data.experience[0].description;
-    
-    document.getElementById("etitle-2").innerHTML = data.experience[1].title+" - "+data.experience[1].company;
-    document.getElementById("eperiod-2").innerHTML = data.experience[1].startDate+" - "+data.experience[1].endDate;
-    document.getElementById("location-2").innerHTML = data.experience[1].location;
-    document.getElementById("description-2").innerHTML = data.experience[1].description;
-
-    document.getElementById("etitle-3").innerHTML = data.experience[2].title+" - "+data.experience[2].company;
-    document.getElementById("eperiod-3").innerHTML = data.experience[2].startDate+" - "+data.experience[2].endDate;
-    document.getElementById("location-3").innerHTML = data.experience[2].location;
-    document.getElementById("description-3").innerHTML = data.experience[2].description;
-
-    document.getElementById("etitle-4").innerHTML = data.experience[3].title+" - "+data.experience[3].company;
-    document.getElementById("eperiod-4").innerHTML = data.experience[3].startDate+" - "+data.experience[3].endDate;
-    document.getElementById("location-4").innerHTML = data.experience[3].location;
-    document.getElementById("description-4").innerHTML = data.experience[3].description;
-
-    document.getElementById("technical-certificate-name-1").innerHTML = data.technicalCertificates[0].name;
-    document.getElementById("technical-certificate-issuingOrganization-1").innerHTML = data.technicalCertificates[0].issuingOrganization;
-    document.getElementById("technical-certificate-issuedDate-1").innerHTML = data.technicalCertificates[0].issuedDate;
+    for(var i = 0; i < 4; i++){
+        document.getElementById("professional-items").innerHTML +=
+         "<div class='resume-item'>"
+         +"<h4 id = 'etitle-"+(i+1)+"'>" + data.experience[i].title
+         + "</h4><h5 id = 'eperiod-"+(i+1)+"'>"+data.experience[i].startDate+" - "+data.experience[i].endDate
+         +"</h5><em><p id = 'location-"+(i+1)+"'>"+data.experience[i].location
+         + "</h5><em><p id = 'description-"+(i+1)+"'>"+data.experience[i].description+ "</p></em></div>";
+    }
+    var c = 1;
+    for(var i = 0,j = 0; i < 3 || j < 3; i++, j++){
+        if(i < 3){
+            document.getElementById("certificates").innerHTML += "<div class='col-lg-4 col-md-6 portfolio-item filter-app'>"
+            + "<div class='portfolio-wrap'>"
+            +  "<img src='assets/img/portfolio/portfolio-"+c+".jpg' class='img-fluid' alt=''>"
+            +  "<div class='portfolio-info'>"
+            +    "<h4 id = 'technical-certificate-name-1'>"+data.technicalCertificates[i].name+"</h4>"
+            +    "<p id = 'technical-certificate-issuingOrganization-1'>"+data.technicalCertificates[i].issuingOrganization+"</p>"
+            +    "<p id = 'technical-certificate-issuedDate-1'>"+data.technicalCertificates[i].issuedDate+"</p>"
+            +    "<div class='portfolio-links'>"
+            +      "<a href='assets/img/portfolio/portfolio-1.jpg' data-gallery='portfolioGallery' class='portfolio-lightbox' title='App 1'><i class='bx bx-plus'></i></a>"
+            +      "<a href='portfolio-details.html' class='portfolio-details-lightbox' data-glightbox='type: external' title='Portfolio Details'><i class='bx bx-link'></i></a>"
+            +    "</div></div></div></div>";
+            c++;
+        }
+        if(j < 3){
+            document.getElementById("certificates").innerHTML += "<div class='col-lg-4 col-md-6 portfolio-item filter-web'>"
+            + "<div class='portfolio-wrap'>"
+            +  "<img src='assets/img/portfolio/portfolio-"+c+".jpg' class='img-fluid' alt=''>"
+            +  "<div class='portfolio-info'>"
+            +    "<h4 id = 'technical-certificate-name-1'>"+data.otherCertificates[j].name+"</h4>"
+            +    "<p id = 'technical-certificate-issuingOrganization-1'>"+data.otherCertificates[j].issuingOrganization+"</p>"
+            +    "<p id = 'technical-certificate-issuedDate-1'>"+data.otherCertificates[j].issuedDate+"</p>"
+            +    "<div class='portfolio-links'>"
+            +      "<a href='assets/img/portfolio/portfolio-1.jpg' data-gallery='portfolioGallery' class='portfolio-lightbox' title='App 1'><i class='bx bx-plus'></i></a>"
+            +      "<a href='portfolio-details.html' class='portfolio-details-lightbox' data-glightbox='type: external' title='Portfolio Details'><i class='bx bx-link'></i></a>"
+            +    "</div></div></div></div>";
+            c++;
+        }
+    }
 
 })()
