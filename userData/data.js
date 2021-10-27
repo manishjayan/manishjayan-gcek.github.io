@@ -156,7 +156,8 @@ var data = {
         {
             "name": "Email spam recognition using python",
             "description": "Used numpy and scikit learn to train dataset",
-            "purpose": "College Mini Project"
+            "purpose": "College Mini Project",
+            "link": "#"
         },
         {
             "name": "Sangrah Score Sheet Website",
@@ -234,6 +235,14 @@ var data = {
             +    "</div></div></div></div>";
             c++;
         }
+    }
+
+    for(var i = 0; i < 3; i++){
+        document.getElementById("project-items").innerHTML += "<div class='col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0' data-aos='zoom-in' data-aos-delay='200'>"
+        +"<div class='icon-box iconbox-orange '>"
+        +"<h4><a href='"+data.projects[i].link+"'target='_blank'>"+data.projects[i].name+" - "+data.projects[i].purpose+"</a></h4><p>"
+        +data.projects[i].description
+        +"</p></div></div>";
     }
 
 })()
