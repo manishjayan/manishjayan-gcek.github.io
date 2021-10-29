@@ -38,10 +38,10 @@
     data.experience.forEach(professionalitem => {
         document.getElementById("professional-items").innerHTML +=
             "<div class='resume-item'>"
-            + "<h4 id = 'etitle-" + (i + 1) + "'>" + professionalitem.title
-            + "</h4><h5 id = 'eperiod-" + (i + 1) + "'>" + professionalitem.startDate + " - " + professionalitem.endDate
-            + "</h5><em><p id = 'location-" + (i + 1) + "'>" + professionalitem.location
-            + "</h5><em><p id = 'description-" + (i + 1) + "'>" + professionalitem.description + "</p></em></div>";
+            + "<h4 id = 'etitle'>" + professionalitem.title
+            + "</h4><h5 id = 'eperiod'>" + professionalitem.startDate + " - " + professionalitem.endDate
+            + "</h5><em><p id = 'location'>" + professionalitem.location
+            + "</h5><em><p id = 'description'>" + professionalitem.description + "</p></em></div>";
     })
 
     // skills
@@ -57,9 +57,10 @@
     });
 
     // Project
-    data.projects.forEach(projectitem => {
+    data.projects.forEach((projectitem,index) => {
         document.getElementById("project-items").innerHTML += "<div class='col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0' data-aos='zoom-in' data-aos-delay='200'>"
-            + "<div class='icon-box iconbox-orange '>"
+            + "<div class='icon-box'>"
+            + "<img src='assets/img/projects/project-"+(index+1)+".jpg' class='img-fluid' alt=''>"
             + "<h4><a href='" + projectitem.link + "'target='_blank'>" + projectitem.name + " - " + projectitem.purpose + "</a></h4><p>"
             + projectitem.description
             + "</p></div></div>";
@@ -71,13 +72,13 @@
         if (i < 3) {
             document.getElementById("certificates").innerHTML += "<div class='col-lg-4 col-md-6 portfolio-item filter-app'>"
                 + "<div class='portfolio-wrap'>"
-                + "<img src='assets/img/portfolio/technical-" + (i+1) + ".jpg' class='img-fluid' alt=''>"
+                + "<img src='assets/img/certificates/technical-" + (i+1) + ".jpg' class='img-fluid' alt=''>"
                 + "<div class='portfolio-info'>"
                 + "<h4 id = 'technical-certificate-name-1'>" + data.technicalCertificates[i].name + "</h4>"
                 + "<p id = 'technical-certificate-issuingOrganization-1'>" + data.technicalCertificates[i].issuingOrganization + "</p>"
                 + "<p id = 'technical-certificate-issuedDate-1'>" + data.technicalCertificates[i].issuedDate + "</p>"
                 + "<div class='portfolio-links'>"
-                + "<a href='assets/img/portfolio/portfolio-"+c+".jpg' data-gallery='portfolioGallery' class='portfolio-lightbox' title='App 1'><i class='bx bx-plus'></i></a>"
+                + "<a href='assets/img/certificates/technical-" + (i+1) +".jpg' data-gallery='portfolioGallery' class='portfolio-lightbox' title=''><i class='bx bx-plus'></i></a>"
                 + "<a target = '_blank' href='"+data.technicalCertificates[i].verify+"' class='portfolio-details-lightbox' data-glightbox='type: internal' title = 'verify''><i class='bx bx-link'></i></a>"
                 + "</div></div></div></div>";
             c++;
@@ -85,13 +86,13 @@
         if (j < 3) {
             document.getElementById("certificates").innerHTML += "<div class='col-lg-4 col-md-6 portfolio-item filter-web'>"
                 + "<div class='portfolio-wrap'>"
-                + "<img src='assets/img/portfolio/others-" + (j+1) + ".jpg' class='img-fluid' alt=''>"
+                + "<img src='assets/img/certificates/others-" + (j+1) + ".jpg' class='img-fluid' alt=''>"
                 + "<div class='portfolio-info'>"
                 + "<h4 id = 'technical-certificate-name-1'>" + data.otherCertificates[j].name + "</h4>"
                 + "<p id = 'technical-certificate-issuingOrganization-1'>" + data.otherCertificates[j].issuingOrganization + "</p>"
                 + "<p id = 'technical-certificate-issuedDate-1'>" + data.otherCertificates[j].issuedDate + "</p>"
                 + "<div class='portfolio-links'>"
-                + "<a href='assets/img/portfolio/portfolio-"+c+".jpg' data-gallery='portfolioGallery' class='portfolio-lightbox' title='App 1'><i class='bx bx-plus'></i></a>"
+                + "<a href='assets/img/certificates/others-" + (j+1) +".jpg' data-gallery='portfolioGallery' class='portfolio-lightbox' title=''><i class='bx bx-plus'></i></a>"
                 + "<a target = '_blank' href='"+data.otherCertificates[i].verify+"' class='portfolio-details-lightbox' data-glightbox='type: external' title='Portfolio Details'><i class='bx bx-link'></i></a>"
                 + "</div></div></div></div>";
             c++;

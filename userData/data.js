@@ -157,7 +157,7 @@ var data = {
             "name": "Email spam recognition using python",
             "description": "Used numpy and scikit learn to train dataset",
             "purpose": "College Mini Project",
-            "link": "#"
+            "link": ""
         },
         {
             "name": "Sangrah Score Sheet Website",
