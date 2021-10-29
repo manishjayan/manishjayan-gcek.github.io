@@ -27,22 +27,43 @@
     });
 
     // My Journey
-    for (var i = 0; i < 3; i++) {
+    data.education.forEach(educationitem => {
         document.getElementById("education-items").innerHTML +=
-            "<div class='resume-item'><h4 id = 'school-" + (i + 1) + "'>" + data.education[i].school
-            + "</h4><h5 id = 'period-" + (i + 1) + "'>" + data.education[i].startYear + " - " + data.education[i].endYear
-            + "</h5><em><p id = 'fieldofstudy-" + (i + 1) + "'>" + data.education[i].fieldOfStudy
+            "<div class='resume-item'><h4 id = 'school'>" + educationitem.school
+            + "</h4><h5 id = 'period'>" + educationitem.startYear + " - " + educationitem.endYear
+            + "</h5><em><p id = 'fieldofstudy'>" + educationitem.fieldOfStudy
             + "</p></em><p></p></div>";
-    }
+    })
 
-    for (var i = 0; i < 4; i++) {
+    data.experience.forEach(professionalitem => {
         document.getElementById("professional-items").innerHTML +=
             "<div class='resume-item'>"
-            + "<h4 id = 'etitle-" + (i + 1) + "'>" + data.experience[i].title
-            + "</h4><h5 id = 'eperiod-" + (i + 1) + "'>" + data.experience[i].startDate + " - " + data.experience[i].endDate
-            + "</h5><em><p id = 'location-" + (i + 1) + "'>" + data.experience[i].location
-            + "</h5><em><p id = 'description-" + (i + 1) + "'>" + data.experience[i].description + "</p></em></div>";
-    }
+            + "<h4 id = 'etitle-" + (i + 1) + "'>" + professionalitem.title
+            + "</h4><h5 id = 'eperiod-" + (i + 1) + "'>" + professionalitem.startDate + " - " + professionalitem.endDate
+            + "</h5><em><p id = 'location-" + (i + 1) + "'>" + professionalitem.location
+            + "</h5><em><p id = 'description-" + (i + 1) + "'>" + professionalitem.description + "</p></em></div>";
+    })
+
+    // skills
+    var flag = 1
+    Object.keys(data.skills).map(skill =>{
+        var part = flag ? "skillspart1" : "skillspart2";
+        document.getElementById(part).innerHTML += "<div class='progress'>"
+        +"<span class='skill'> "+skill+" <i class='val'>"+data.skills[skill]+"%</i></span>"
+        +"<div class='progress-bar-wrap'>"
+        +  "<div class='progress-bar' role='progressbar' aria-valuenow="+data.skills[skill]+" aria-valuemin='0' aria-valuemax='100'></div>"
+        +"</div></div>"
+        flag = !flag
+    });
+
+    // Project
+    data.projects.forEach(projectitem => {
+        document.getElementById("project-items").innerHTML += "<div class='col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0' data-aos='zoom-in' data-aos-delay='200'>"
+            + "<div class='icon-box iconbox-orange '>"
+            + "<h4><a href='" + projectitem.link + "'target='_blank'>" + projectitem.name + " - " + projectitem.purpose + "</a></h4><p>"
+            + projectitem.description
+            + "</p></div></div>";
+    })
 
     // Certificates
     var c = 1;
@@ -50,7 +71,7 @@
         if (i < 3) {
             document.getElementById("certificates").innerHTML += "<div class='col-lg-4 col-md-6 portfolio-item filter-app'>"
                 + "<div class='portfolio-wrap'>"
-                + "<img src='assets/img/portfolio/portfolio-" + c + ".jpg' class='img-fluid' alt=''>"
+                + "<img src='assets/img/portfolio/technical-" + (i+1) + ".jpg' class='img-fluid' alt=''>"
                 + "<div class='portfolio-info'>"
                 + "<h4 id = 'technical-certificate-name-1'>" + data.technicalCertificates[i].name + "</h4>"
                 + "<p id = 'technical-certificate-issuingOrganization-1'>" + data.technicalCertificates[i].issuingOrganization + "</p>"
@@ -64,7 +85,7 @@
         if (j < 3) {
             document.getElementById("certificates").innerHTML += "<div class='col-lg-4 col-md-6 portfolio-item filter-web'>"
                 + "<div class='portfolio-wrap'>"
-                + "<img src='assets/img/portfolio/portfolio-" + c + ".jpg' class='img-fluid' alt=''>"
+                + "<img src='assets/img/portfolio/others-" + (j+1) + ".jpg' class='img-fluid' alt=''>"
                 + "<div class='portfolio-info'>"
                 + "<h4 id = 'technical-certificate-name-1'>" + data.otherCertificates[j].name + "</h4>"
                 + "<p id = 'technical-certificate-issuingOrganization-1'>" + data.otherCertificates[j].issuingOrganization + "</p>"
@@ -77,14 +98,6 @@
         }
     }
 
-    // Project
-    for (var i = 0; i < 3; i++) {
-        document.getElementById("project-items").innerHTML += "<div class='col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0' data-aos='zoom-in' data-aos-delay='200'>"
-            + "<div class='icon-box iconbox-orange '>"
-            + "<h4><a href='" + data.projects[i].link + "'target='_blank'>" + data.projects[i].name + " - " + data.projects[i].purpose + "</a></h4><p>"
-            + data.projects[i].description
-            + "</p></div></div>";
-    }
 
     // contact form
     document.getElementById("location").innerHTML = data.city + ", " + data.state;
