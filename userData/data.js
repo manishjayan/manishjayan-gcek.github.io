@@ -1,0 +1,180 @@
+var data = {
+    "firstName": "Manish",
+    "lastName": "Jayan",
+    "city": "Thrissur",
+    "state": "Kerala",
+    "phoneNumber": "+91 828 157 7130",
+    "email": "manishjayan@gmail.com",
+    "website": "https://manishjayan.in",
+    "github": "https://github.com/manishjayan",
+    "instagram": "https://www.instagram.com/iammanishjayan",
+    "twitter": "https://twitter.com/iammanishjayan",
+    "linkedin": "https://linkedin.com/in/manishjayan",
+    "education": [
+        {
+            "school": "Jeevan Jyoti Public School",
+            "fieldOfStudy": "High School",
+            "startYear": "2002",
+            "endYear": "2014"
+        },
+        {
+            "school": "St.Thomas thope",
+            "fieldOfStudy": "Higher Secondary education",
+            "startYear": "2014",
+            "endYear": "2016"
+        },
+        {
+            "school": "Government College Of Engineering Kannur",
+            "degree": "Bachelor of Technology - BTech",
+            "fieldOfStudy": "Computer Science",
+            "startYear": "2016",
+            "endYear": "2020"
+        }
+    ],
+    "intership": [
+        {
+            "Organization": "iBAND Technologies",
+            "name": "Android App Development",
+            "startDate": "15-06-2018",
+            "endDate": "30-06-2018"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Data Specialist",
+            "employementType": "Part-time",
+            "company": "Awign",
+            "location": "work from home",
+            "startDate": "03-2019",
+            "endDate": "02-2020",
+            "description": ""
+        },
+        {
+            "title": "Exam Proctor",
+            "employementType": "Part-time",
+            "company": "Awign",
+            "location": "work from home",
+            "startDate": "08-2020",
+            "endDate": "10-2020",
+            "description": "Remote assessment proctoring"
+        },
+        {
+            "title": "Subject Matter Expert",
+            "employementType": "Part-time",
+            "company": "Chegg",
+            "location": "Work from home",
+            "startDate": "08-2020",
+            "endDate": "11-2020",
+            "description": "Provide Computer science solutions"
+        },
+        {
+            "title": "Programmer Analyst Trainee",
+            "employementType": "Full-time",
+            "company": "Cognizant",
+            "location": "Coimbatore, Tamil Nadu, India",
+            "startDate": "12-2020",
+            "endDate": "present",
+            "description": ""
+        }
+    ],
+    "technicalCertificates": [
+        {
+            "name": "Linux Package Management & Kernel Conﬁguration",
+            "issuingOrganization": "Government College Of Engineering Kannur",
+            "issuedDate": "05-03-2018",
+            "verify": "#"
+        },
+        {
+            "name": "Machine Learning Workshop",
+            "issuingOrganization": "iitmadras",
+            "issuedDate": "10-2018",
+            "verify": "#"
+        },
+        {
+            "name": "Architecting with Google Compute Engine",
+            "issuingOrganization": "coursera",
+            "issuedDate": "31-03-2020",
+            "verify": "https://coursera.org/share/340bae1820ab639aa0ff36e7d02dc5ee"
+        }
+    ],
+    "otherCertificates": [
+        {
+            "name": "Musical Band",
+            "issuingOrganization": "Government College Of Engineering Kannur",
+            "issuedDate": "2018",
+            "event": "College Arts Festival",
+            "placed": "Second",
+            "verify": "#"
+        },
+        {
+            "name": "Script Writing English",
+            "issuingOrganization": "Government College Of Engineering Kannur",
+            "issuedDate": "2018",
+            "event": "College Arts Festival",
+            "placed": "Third",
+            "verify": "#"
+        },
+        {
+            "name": "Skit English",
+            "issuingOrganization": "Government College Of Engineering Kannur",
+            "issuedDate": "2018",
+            "event": "College Arts Festival",
+            "placed": "Third",
+            "verify": ""
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Indian Society for Technical Education",
+            "Cause": "Science and Technology",
+            "startDate": "02-2018",
+            "endDate": ""
+        }
+    ],
+    "coordinator": [
+        {
+            "organization": "Xplore'19",
+            "name": "Backtrack coding - Coordinator",
+            "cause": "Science and Technology",
+            "startDate": "03-2019",
+            "endDate": ""
+        }
+    ],
+    "skills": {
+        "C": "70",
+        "C++": "70",
+        "python": "60",
+        "HTML": "80",
+        "JavaScript": "60",
+        "CSS": "60",
+        "C#": "70",
+        "NodeJS": "60",
+        "SQL": "70",
+        "DotNet Core": "50"
+    },
+    "projects": [
+        {
+            "name": "Email spam recognition using python",
+            "description": "Used numpy and scikit learn to train dataset",
+            "purpose": "College Mini Project",
+            "link": ""
+        },
+        {
+            "name": "Sangrah Score Sheet Website",
+            "description": "Real time scoreboard application for sangrah 18 competion ",
+            "purpose": "College Event",
+            "link": "https://github.com/manishjayan/sangrahscoresheet"
+        },
+        {
+            "name": "Portfolio webpage for DBMS Lab",
+            "description": "Portfolio website for an employee database in node js and mysql",
+            "purpose": "College Lab Project",
+            "link": "https://github.com/manishjayan/portfoliosql"
+        }
+    ],
+    "Hobbies": [
+        "Watching movies",
+        "Playing guitar",
+        "Travelling"
+    ]
+};
