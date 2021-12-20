@@ -47,7 +47,7 @@ var data = {
             "location": "work from home",
             "startDate": "03-2019",
             "endDate": "02-2020",
-            "description": ""
+            "description": "* did analysis and converted all the raw data to useful information for Zomato to work on | Provided metrics for all the raw data information"
         },
         {
             "title": "Exam Proctor",
@@ -74,7 +74,7 @@ var data = {
             "location": "Coimbatore, Tamil Nadu, India",
             "startDate": "12-2020",
             "endDate": "present",
-            "description": ""
+            "description": "Working as a Full Stack Engineer on DotNet technology stack as a Programmer Analyst."
         }
     ],
     "technicalCertificates": [
