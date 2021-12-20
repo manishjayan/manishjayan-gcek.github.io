@@ -56,7 +56,7 @@ var data = {
             "location": "work from home",
             "startDate": "08-2020",
             "endDate": "10-2020",
-            "description": "Remote assessment proctoring"
+            "description": " supervised the testing of large numbers of students for TCS ION | created reports at end of all proctoring"
         },
         {
             "title": "Subject Matter Expert",
@@ -65,7 +65,7 @@ var data = {
             "location": "Work from home",
             "startDate": "08-2020",
             "endDate": "11-2020",
-            "description": "Provide Computer science solutions"
+            "description": "Authored solutions for questions from Computer Science Engineering textbooks | Online answering of CSE questions posted by international students | Provided quality answers with detailed explanation all the questions posted"
         },
         {
             "title": "Programmer Analyst",
