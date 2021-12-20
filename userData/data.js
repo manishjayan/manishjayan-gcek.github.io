@@ -68,7 +68,7 @@ var data = {
             "description": "Provide Computer science solutions"
         },
         {
-            "title": "Programmer Analyst Trainee",
+            "title": "Programmer Analyst",
             "employementType": "Full-time",
             "company": "Cognizant",
             "location": "Coimbatore, Tamil Nadu, India",
