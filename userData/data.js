@@ -47,7 +47,7 @@ var data = {
             "location": "work from home",
             "startDate": "03-2019",
             "endDate": "02-2020",
-            "description": "* did analysis and converted all the raw data to useful information for Zomato to work on | Provided metrics for all the raw data information"
+            "description": " did analysis and converted all the raw data to useful information for Zomato to work on | Provided metrics for all the raw data information"
         },
         {
             "title": "Exam Proctor",
