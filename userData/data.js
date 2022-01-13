@@ -141,16 +141,17 @@ var data = {
         }
     ],
     "skills": {
-        "C": "70",
-        "C++": "70",
-        "python": "60",
-        "HTML": "80",
-        "JavaScript": "60",
-        "CSS": "60",
-        "C#": "70",
+        "DotNet Core": "95",
+        "C#": "95",
+        "Go": "85",
+        "C": "80",
+        "C++": "80",
+        "HTML": "95",
+        "JavaScript": "80",
+        "CSS": "80",
+        
         "NodeJS": "60",
         "SQL": "70",
-        "DotNet Core": "50"
     },
     "projects": [
         {
