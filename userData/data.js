@@ -149,9 +149,8 @@ var data = {
         "HTML": "95",
         "JavaScript": "80",
         "CSS": "80",
-        
-        "NodeJS": "60",
-        "SQL": "70",
+        "SQL": "85",
+        "NodeJS": "75"
     },
     "projects": [
         {
