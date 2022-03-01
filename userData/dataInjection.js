@@ -101,7 +101,7 @@
 
 
     // contact form
-    document.getElementById("location").innerHTML = data.city + ", " + data.state;
+    document.getElementById("mylocation").innerHTML = data.city + ", " + data.state;
     document.getElementById("myemail").innerHTML = data.email;
     document.getElementById("phone").innerHTML = data.phoneNumber;
     
