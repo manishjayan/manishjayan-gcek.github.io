@@ -68,7 +68,7 @@ var data = {
             "description": "Authored solutions for questions from Computer Science Engineering textbooks | Online answering of CSE questions posted by international students | Provided quality answers with detailed explanation all the questions posted"
         },
         {
-            "title": "Programmer Analyst",
+            "title": "Jr. Software Engineer",
             "employementType": "Full-time",
             "company": "Cognizant",
             "location": "Coimbatore, Tamil Nadu, India",
